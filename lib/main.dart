@@ -50,7 +50,7 @@ class _MyHomePageState extends State<MyHomePage> {
               IconButton(
                 icon: const Icon(Icons.expand_more),
                 onPressed: () {
-                  // Ajoutez votre code ici pour gérer le clic sur l'icône
+/*                   print('Click icon Button'); */
                 },
               ),
               const Spacer(),
@@ -116,20 +116,174 @@ class _MyHomePageState extends State<MyHomePage> {
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
                       Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                        Text(
-                          "Mike Ehrmantraut",
-                          style: TextStyle(
-                              fontWeight: FontWeight.bold, fontSize: 15),
-                        ),
-                        Text(
-                          "For those who know, actions speak louder than words.",
-                          style: TextStyle(fontSize: 13),
-                        ),
-                      ])
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              "Mike Ehrmantraut",
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold, fontSize: 15),
+                            ),
+                            Text(
+                              "For those who know, actions speak louder than words.",
+                              style: TextStyle(fontSize: 13),
+                            ),
+                          ])
                     ],
                   )),
+              Container(
+                height: 30,
+                margin: const EdgeInsets.only(top: 10, left: 20),
+                child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      ElevatedButton(
+                        onPressed: () {},
+                        style: ElevatedButton.styleFrom(
+                            backgroundColor:
+                                const Color.fromARGB(255, 23, 23, 23),
+                            shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(10)),
+                            padding:
+                                const EdgeInsets.only(left: 30, right: 30)),
+                        child: const Text(
+                          "Modifier le profil",
+                          style: TextStyle(color: Colors.white),
+                        ),
+                      ),
+                      ElevatedButton(
+                        onPressed: () {},
+                        style: ElevatedButton.styleFrom(
+                            backgroundColor:
+                                const Color.fromARGB(255, 23, 23, 23),
+                            shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(10)),
+                            padding:
+                                const EdgeInsets.only(left: 30, right: 30)),
+                        child: const Text(
+                          "Partager le profil",
+                          style: TextStyle(color: Colors.white),
+                        ),
+                      ),
+                      ElevatedButton(
+                        onPressed: () {},
+                        style: ElevatedButton.styleFrom(
+                            minimumSize: Size.zero, // Set this
+                            backgroundColor:
+                                const Color.fromARGB(255, 23, 23, 23),
+                            shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(10)),
+                            padding: const EdgeInsets.all(5)),
+                        child: const Icon(
+                          Icons.add,
+                          color: Colors.white,
+                        ),
+                      ),
+                    ]),
+              ),
+              Container(
+                  margin: const EdgeInsets.only(top: 15, left: 20),
+                  child: const Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              "Stories à la une",
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold, fontSize: 15),
+                            ),
+                            Text(
+                              "Conservez vos stories préférées sur votre profil.",
+                              style: TextStyle(fontSize: 13),
+                            ),
+                          ])
+                    ],
+                  )),
+              SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: Container(
+                    margin: const EdgeInsets.only(top: 10, left: 20),
+                    child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: <Widget>[
+                          Container(
+                            margin: const EdgeInsets.only(right: 17),
+                            child: ElevatedButton(
+                              onPressed: () {},
+                              style: ElevatedButton.styleFrom(
+                                  side: const BorderSide(
+                                      color: Colors.white, width: 1),
+                                  minimumSize: Size.zero, // Set this
+                                  backgroundColor:
+                                      const Color.fromARGB(255, 0, 0, 0),
+                                  shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(50)),
+                                  padding: const EdgeInsets.all(25)),
+                              child: const Icon(
+                                Icons.add,
+                                color: Colors.white,
+                              ),
+                            ),
+                          ),
+                          Container(
+                            margin: const EdgeInsets.only(right: 17),
+                            child: ElevatedButton(
+                                onPressed: () {},
+                                style: ElevatedButton.styleFrom(
+                                    minimumSize: Size.zero, // Set this
+                                    backgroundColor:
+                                        const Color.fromARGB(255, 30, 30, 30),
+                                    shape: RoundedRectangleBorder(
+                                        borderRadius:
+                                            BorderRadius.circular(50)),
+                                    padding: const EdgeInsets.all(38)),
+                                child: null),
+                          ),
+                          Container(
+                            margin: const EdgeInsets.only(right: 17),
+                            child: ElevatedButton(
+                                onPressed: () {},
+                                style: ElevatedButton.styleFrom(
+                                    minimumSize: Size.zero, // Set this
+                                    backgroundColor:
+                                        const Color.fromARGB(255, 30, 30, 30),
+                                    shape: RoundedRectangleBorder(
+                                        borderRadius:
+                                            BorderRadius.circular(50)),
+                                    padding: const EdgeInsets.all(38)),
+                                child: null),
+                          ),
+                          Container(
+                            margin: const EdgeInsets.only(right: 17),
+                            child: ElevatedButton(
+                                onPressed: () {},
+                                style: ElevatedButton.styleFrom(
+                                    minimumSize: Size.zero, // Set this
+                                    backgroundColor:
+                                        const Color.fromARGB(255, 30, 30, 30),
+                                    shape: RoundedRectangleBorder(
+                                        borderRadius:
+                                            BorderRadius.circular(50)),
+                                    padding: const EdgeInsets.all(38)),
+                                child: null),
+                          ),
+                          Container(
+                            margin: const EdgeInsets.only(right: 17),
+                            child: ElevatedButton(
+                                onPressed: () {},
+                                style: ElevatedButton.styleFrom(
+                                    minimumSize: Size.zero, // Set this
+                                    backgroundColor:
+                                        const Color.fromARGB(255, 30, 30, 30),
+                                    shape: RoundedRectangleBorder(
+                                        borderRadius:
+                                            BorderRadius.circular(50)),
+                                    padding: const EdgeInsets.all(38)),
+                                child: null),
+                          ),
+                        ]),
+                  ))
             ],
           ),
         ));
